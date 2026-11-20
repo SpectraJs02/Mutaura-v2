@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi bolsa | MUTAURA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="main-header">
+
+        <a href="index.html" class="brand">
+            <img src="assets/logo.png" alt="MUTAURA" class="brand-logo">
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+            <a href="bienestar.html">Bienestar</a>
+            <a href="nosotros.html">Nuestra esencia</a>
+            <a href="tienda.html">Tienda</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="bag-page">
+
+        <section class="bag-heading">
+            <p class="section-eyebrow">MUTAURA · TU SELECCIÓN</p>
+            <h1>Tu bolsa <span>de bienestar.</span></h1>
+            <p>Revisa tus productos antes de realizar tu pedido.</p>
+        </section>
+
+
+        <section class="bag-content">
+
+            <!-- PRODUCTOS -->
+            <div class="bag-products-section">
+
+                <div class="bag-section-heading">
+                    <h2>Mis productos</h2>
+                    <span id="bagItemsCount">0 productos</span>
+                </div>
+
+                <div id="bagProducts"></div>
+
+                <div class="bag-empty" id="bagEmpty" hidden>
+                    <h2>Tu bolsa está esperando.</h2>
+                    <p>Aún no has agregado productos a tu selección.</p>
+                    <a href="tienda.html" class="hero-button">
+                        EXPLORAR TIENDA
+                    </a>
+                </div>
+
+                <a href="tienda.html" class="bag-continue">
+                    ← Seguir explorando
+                </a>
+
+            </div>
+
+
+            <!-- RESUMEN -->
+            <aside class="bag-summary" id="bagSummary">
+
+                <h2>Resumen de pedido</h2>
+
+                <div class="bag-summary-line">
+                    <span>Productos</span>
+                    <strong id="bagSubtotal">S/ 0.00</strong>
+                </div>
+
+                <div class="bag-summary-line">
+                    <span>Entrega</span>
+                    <strong>Por coordinar</strong>
+                </div>
+
+                <div class="bag-summary-divider"></div>
+
+                <div class="bag-summary-total">
+                    <span>Total de productos</span>
+                    <strong id="bagTotal">S/ 0.00</strong>
+                </div>
+
+                <p class="bag-delivery-note">
+                    El costo de envío se coordinará según tu distrito.
+                    También puedes recoger tu pedido gratuitamente.
+                </p>
+
+                <button type="button" id="checkoutWhatsApp" class="bag-checkout">
+                    RESERVAR POR WHATSAPP
+                </button>
+
+                <p class="bag-summary-note">
+                    No realizamos pagos en línea. Te indicaremos los canales
+                    de pago al confirmar tu pedido.
+                </p>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <p>© 2026 MUTAURA · Cuidado natural y bienestar.</p>
+    </footer>
+
+
+    <script src="js/bolsa.js"></script>
+
+    <script src="js/effects.js"></script>
+</body>
+</html>
